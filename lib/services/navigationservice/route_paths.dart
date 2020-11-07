@@ -8,15 +8,7 @@ class Routes {
   static const String VerifyRoute = 'verify';
   static const String CartRoute = 'cart';
   static const String SearchRoute = 'search';
-  static const String ProductDetails = 'productdetails';
+  static const String Products = 'products';
 
-  static const String OrderListRoute = 'orderslist';
   static const String OrdersRoute = 'order';
-  static const String PaymentDetailRoute = 'payments';
-  static const String FeedbackRoute = 'feedback';
-  static const String TCRoute = 't&c';
-  static const String AccountRoute = 'account';
-  static const String AboutRoute = 'about';
-  static const String RegRoute = 'registration';
-  static const String MilkSchedule = 'milkschedule';
-}
+  }

@@ -9,11 +9,12 @@ class DataUtil {
     return _instance;
   }
 
-  getCustomerId({Function(String) customer}) async {
+  getUserName({key, Function(String) username}) async {
     await SharedPrefUtility()
-        .getStringToSharedPref(Constants.CUSTOMER_ID)
+        .getStringToSharedPref(
+            key != null && key != '' ? key : Constants.USERNAME)
         .then((value) {
-      if (customer != null) customer(value);
+      if (username != null) username(value);
     });
   }
 }

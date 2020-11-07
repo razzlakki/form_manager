@@ -17,15 +17,27 @@ class SharedPrefUtility {
     return pref.getString(key);
   }
 
+
   setIntToSharedPref(String key, int val) async {
     SharedPreferences pref = await SharedPreferences.getInstance();
     pref.setInt(key, val);
+  }
+
+  setListToSharedPref(String key, List val) async {
+    SharedPreferences pref = await SharedPreferences.getInstance();
+    pref.setStringList(key, val);
+  }
+
+  getListToSharedPref(String key) async {
+    SharedPreferences pref = await SharedPreferences.getInstance();
+    return pref.getStringList(key);
   }
 
   getIntToSharedPref(String key) async {
     SharedPreferences pref = await SharedPreferences.getInstance();
     return pref.getInt(key);
   }
+
 
   setBoolToSharedPref(String key, bool val) async {
     SharedPreferences pref = await SharedPreferences.getInstance();

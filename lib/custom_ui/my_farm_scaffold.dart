@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_form_admin/theme/color_config.dart';
+import '../theme/color_config.dart';
 
 // ignore: must_be_immutable
 class MyFarmScaffold extends StatefulWidget {
